@@ -42,7 +42,7 @@ if (test1 == test2 || test1 == 3){
 }
 else {
   console.log("this is false")
-}*/
+}
 
 var fruit = "apple";
 switch (fruit) {
@@ -58,5 +58,22 @@ switch (fruit) {
     break;
   default:
   alert("no special condition")
+}*/
 
+//5.Objects
+var person = {
+  firstName: "kushal",
+  lastName: "Atreya",
+  age: 22,
+  address:{
+    street: "Kaajanintie",
+    PostalCode: "90130",
+    State:"Toronto",
+  },
+  skills: ["JavaScript","HTML5","CSS"],
+  fullName: function(){
+    return this.firstName;
 }
+
+//console.log(person.address.street);
+console.log(person.fullName());
